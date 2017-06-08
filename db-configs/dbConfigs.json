@@ -1,0 +1,13 @@
+{
+    "database":
+    {
+        "driver": "mysql",
+        "host": "localhost",
+        "databaseName": "check_data",
+        "username": "root",
+        "password": "",
+        "tableName": "films",
+        "tablePerfix": "",
+        "charset": "utf8"
+    }
+}
