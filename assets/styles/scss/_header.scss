@@ -1,0 +1,78 @@
+@import "_Incorporations.scss";
+header
+{
+    background-color: #004D40;
+    min-height: 13.8em;
+    border-bottom: 5px solid #00695C;
+    div#logo
+    {
+        margin-bottom: 4em;
+        margin-top: 2em;
+        > h1
+        {
+            display: block;
+            text-align: center;
+            color: #9E9E9E;
+            cursor: default;
+            font-family: "Exo-ExtraBoldItalic";
+            font-size: 70px;
+            animation-name: textBlinker;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+}
+
+nav#menu
+{
+    padding: 0;
+    > ul
+    {
+        li
+        {
+            float: left;
+            a
+            {
+                float: left;
+                padding: 1.5em 4.5em;
+                border-bottom: 2px solid #004D40;
+                border-top: 2px solid #004D40;
+                text-decoration: none;
+                color: #E0E0E0;
+                font-family: 'Nobile-Italic';
+                //font-weight: bold;
+                //font-size: 1.1em;
+                @include timer2();
+                &:hover
+                {
+                    color: #FAFAFA;
+                    background-color: #00695C;
+                    border-bottom-color: #B2DFDB;
+                    border-top-color: #B2DFDB;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 555px)
+{
+    nav#menu
+    {
+        > ul
+        {
+            > li
+            {
+                float: none;
+                > a
+                {
+                    float: none;
+                    display: block;
+                    padding-left: 0.7em;
+                }
+            }
+        }
+    }
+}

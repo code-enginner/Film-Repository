@@ -1,0 +1,118 @@
+@-webkit-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+.unSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+* {
+  -webkit-border-radius: 0 0 0 0 !important;
+  -moz-border-radius: 0 0 0 0 !important;
+  -ms-border-radius: 0 0 0 0 !important;
+  -o-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+div.wrapAll {
+  padding: 2.5em 0 3em 0;
+  background-color: #F9F9F9;
+  height: 100%;
+}
+
+div.wrapAll div.loginContent {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 50%;
+  height: 23em;
+  padding: 1em 0.5em 1em 0.5em;
+  border: 1px solid #BDBDBD;
+}
+
+div.wrapAll div.loginContent div.wrapper1 div.input-group input.form-control {
+  font-family: "Exo-Regular";
+  font-weight: bold;
+}
+
+div.wrapAll div.loginContent div.wrapper1 div.input-group input.form-control:focus {
+  border-color: rgba(183, 28, 28, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(183, 28, 28, 0.6);
+  outline: 0 none;
+}
+
+div.wrapAll div.loginContent div.wrapper1 div.input-group > span {
+  font-family: "apple-system";
+  font-weight: bold;
+}
+
+div.wrapAll div.loginContent div.wrapper1 > button {
+  width: 7em;
+  border: 1px solid #757575;
+  background-color: #E0E0E0;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+div.wrapAll div.loginContent div.wrapper2 {
+  padding-right: 0;
+  border: 1px solid #EEEEEE;
+}
+
+div.wrapAll div.loginContent div.wrapper2 div.captcha {
+  height: auto;
+}
+
+div.wrapAll div.loginContent div.wrapper3 {
+  border: 1px solid #EEEEEE;
+  margin-top: 1.5em;
+}
+
+div.wrapAll div.loginContent div.input-group {
+  margin-bottom: 12px;
+}

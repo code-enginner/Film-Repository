@@ -1,0 +1,75 @@
+@import "_Incorporations.scss";
+@media only screen and (min-width: 1000px)
+{
+
+}
+div.wrapAll
+{
+    padding: 2.5em 0 3em 0;
+    background-color: #F9F9F9;
+    height: 100%;
+    div.loginContent
+    {
+        //background-color: #FAFAFA;
+        background-color: #fff;
+        margin: 0 auto;
+        width: 50%;
+        height: 23em;
+        padding: 1em 0.5em 1em 0.5em;
+        border: 1px solid #BDBDBD;
+        div.wrapper1
+        {
+            div.input-group
+            {
+                input.form-control
+                {
+                    font-family: "Exo-Regular";
+                    font-weight: bold;
+                    &:focus
+                    {
+                        border-color: rgba(183, 28, 28, 0.8);
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(183, 28, 28, 0.6);
+                        outline: 0 none;
+                    }
+                }
+                > span
+                {
+                    font-family: "apple-system";
+                    font-weight: bold;
+                }
+            }
+            > button
+            {
+                width: 7em;
+                border: 1px solid #757575;
+                background-color: #E0E0E0;
+                @include timer2();
+            }
+        }
+
+        div.wrapper2
+        {
+            padding-right: 0;
+            border: 1px solid #EEEEEE;
+            div.captcha
+            {
+                height: auto;
+            }
+        }
+
+        div.wrapper3
+        {
+            border: 1px solid #EEEEEE;
+            margin-top: 1.5em;
+        }
+        div.input-group
+        {
+            margin-bottom: 12px;
+            > input.form-control
+            {
+                //width: 15em;
+            }
+        }
+    }
+
+}

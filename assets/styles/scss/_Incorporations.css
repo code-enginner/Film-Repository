@@ -1,0 +1,58 @@
+@-webkit-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+.unSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+* {
+  -webkit-border-radius: 0 0 0 0 !important;
+  -moz-border-radius: 0 0 0 0 !important;
+  -ms-border-radius: 0 0 0 0 !important;
+  -o-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}

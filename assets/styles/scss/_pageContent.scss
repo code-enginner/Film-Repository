@@ -1,0 +1,187 @@
+@import "_Incorporations.scss";
+
+div#pages
+{
+    //border: $border;
+}
+div.options
+{
+    margin-top: 3em;
+    div.option1
+    {
+        border-bottom: 5px solid #EEEEEE;
+        div.input-group
+        {
+            padding: 1em 0;
+            > span
+            {
+                > button
+                {
+                    color: #616161;
+                    font-weight: bolder;
+                    outline: none;
+                    letter-spacing: 1px;
+                    font-family: "PTN57F";
+                }
+            }
+            > input
+            {
+                color: #616161;
+                //font-family: "KaushanScript-Regular";
+                letter-spacing: 1px;
+                font-family: "PTN57F";
+                &:focus
+                {
+                    border-color: rgba(183, 28, 28, 0.8);
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(183, 28, 28, 0.6);
+                    outline: 0 none;
+                }
+            }
+        }
+        > h3
+        {
+            display: block;
+            text-align: center;
+            padding: 1em;
+            background: #00695C;
+            color: #EEEEEE;
+            border-bottom: 3px solid #004D40;
+            cursor: default;
+            font-family: "Exo-ExtraBoldItalic";
+        }
+    }
+    div.option2
+    {
+        > h3
+        {
+            display: block;
+            text-align: center;
+            padding: 1em;
+            background: #00695C;
+            color: #EEEEEE;
+            border-bottom: 3px solid #004D40;
+            cursor: default;
+            font-family: "Exo-ExtraBoldItalic";
+        }
+        > ul
+        {
+            > li
+            {
+                border-bottom: 1px solid #EEEEEE;
+                padding-top: 2px;
+                @include timer2();
+                > input[type=checkbox]
+                {
+                    display: none;
+                    &:checked
+                    {
+                        +label
+                        {
+                            //background: #01579B;
+                            background: #009688;
+                            color: #fff;
+                            -webkit-transform: noneTranslate($flag);
+                            -moz-transform: noneTranslate($flag);
+                            -ms-transform: noneTranslate($flag);
+                            -o-transform: noneTranslate($flag);
+                            transform: noneTranslate($flag);
+                        }
+                    }
+                }
+                > label
+                {
+                    display: block;
+                    padding: 0.5em 1em;
+                    border-bottom: 2px solid #fff;
+                    cursor: pointer;
+                    color: #616161;
+                    @include timer2();
+                    &:hover
+                    {
+                        background-color: #EEEEEE;
+                        //color: #FF3D00;
+                        color: #8BC34A;
+                        //color: #9C27B0;
+                        //color: #E91E63;
+                        @include translate(7px, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+div#output
+{
+    margin-top: 3em;
+    > hr
+    {
+        border-width: 2px;
+        border-color: #4E342E;
+    }
+    div.cover
+    {
+        text-align: center;
+        overflow: hidden;
+        > img
+        {
+            max-width: 100%;
+        }
+    }
+    div.details
+    {
+        > ul
+        {
+            > li
+            {
+                margin-bottom: 1em;
+                > hr
+                {
+                    margin: 5px;
+                }
+                > span
+                {
+                    display: block;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    cursor: default;
+                    //color: #424242;
+                    color: #795548;
+                    font-family: "PTN57F";
+                    margin-bottom: 0.4em;
+                }
+                > p
+                {
+                    display: block;
+                    font-size: 0.9em;
+                    cursor: default;
+                    //color: #616161;
+                    //color: #5D4037;
+                    //color: #795548;
+                    //color: #880E4F;
+                    color: #455A64;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    > div#nullError
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 991px)
+{
+    div.options
+    {
+        border-bottom: 3px solid #F44336;
+    }
+    div.cover
+    {
+        > img
+        {
+            margin-bottom: 2em;
+        }
+    }
+}

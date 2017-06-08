@@ -1,0 +1,212 @@
+@-webkit-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@-ms-keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+@keyframes textBlinker {
+  from {
+    color: #00695C;
+  }
+  to {
+    color: #FFF;
+  }
+}
+
+.unSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+* {
+  -webkit-border-radius: 0 0 0 0 !important;
+  -moz-border-radius: 0 0 0 0 !important;
+  -ms-border-radius: 0 0 0 0 !important;
+  -o-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+
+div.options {
+  margin-top: 3em;
+}
+
+div.options div.option1 {
+  border-bottom: 5px solid #EEEEEE;
+}
+
+div.options div.option1 div.input-group {
+  padding: 1em 0;
+}
+
+div.options div.option1 div.input-group > span > button {
+  color: #616161;
+  font-weight: bolder;
+  outline: none;
+  letter-spacing: 1px;
+  font-family: "PTN57F";
+}
+
+div.options div.option1 div.input-group > input {
+  color: #616161;
+  letter-spacing: 1px;
+  font-family: "PTN57F";
+}
+
+div.options div.option1 div.input-group > input:focus {
+  border-color: rgba(183, 28, 28, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(183, 28, 28, 0.6);
+  outline: 0 none;
+}
+
+div.options div.option1 > h3 {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  background: #00695C;
+  color: #EEEEEE;
+  border-bottom: 3px solid #004D40;
+  cursor: default;
+  font-family: "Exo-ExtraBoldItalic";
+}
+
+div.options div.option2 > h3 {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  background: #00695C;
+  color: #EEEEEE;
+  border-bottom: 3px solid #004D40;
+  cursor: default;
+  font-family: "Exo-ExtraBoldItalic";
+}
+
+div.options div.option2 > ul > li {
+  border-bottom: 1px solid #EEEEEE;
+  padding-top: 2px;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+div.options div.option2 > ul > li > input[type=checkbox] {
+  display: none;
+}
+
+div.options div.option2 > ul > li > input[type=checkbox]:checked + label {
+  background: #009688;
+  color: #fff;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+div.options div.option2 > ul > li > label {
+  display: block;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  color: #616161;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+div.options div.option2 > ul > li > label:hover {
+  background-color: #EEEEEE;
+  color: #8BC34A;
+  -webkit-transform: translate(7px, 0);
+  -moz-transform: translate(7px, 0);
+  -ms-transform: translate(7px, 0);
+  -o-transform: translate(7px, 0);
+  transform: translate(7px, 0);
+}
+
+div#output {
+  margin-top: 3em;
+}
+
+div#output > hr {
+  border-width: 2px;
+  border-color: #4E342E;
+}
+
+div#output div.cover {
+  text-align: center;
+  overflow: hidden;
+}
+
+div#output div.cover > img {
+  max-width: 100%;
+}
+
+div#output div.details > ul > li {
+  margin-bottom: 1em;
+}
+
+div#output div.details > ul > li > hr {
+  margin: 5px;
+}
+
+div#output div.details > ul > li > span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: default;
+  color: #795548;
+  font-family: "PTN57F";
+  margin-bottom: 0.4em;
+}
+
+div#output div.details > ul > li > p {
+  display: block;
+  font-size: 0.9em;
+  cursor: default;
+  color: #455A64;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  div.options {
+    border-bottom: 3px solid #F44336;
+  }
+  div.cover > img {
+    margin-bottom: 2em;
+  }
+}
