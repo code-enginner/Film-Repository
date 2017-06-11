@@ -12,22 +12,19 @@
     use app\Controllers\ajax_manage_request as ajaxSearch;
 
     $data = json_decode(file_get_contents('php://input'), TRUE);
-    function getArray($data)
-    {
-        $temp = new $data;
-        return $temp[0];
-    }
 
     function searchData($data)
     {
         $safeData = [];
-        foreach ($data as $value)
+        /*foreach ($data as $value)
         {
-            $safeData[] = htmlentities($value, ENT_QUOTES);
+            $safeData[] = htmlentities(utf8_decode($value), ENT_QUOTES);
+        }*/
+        foreach ($data as $key => $value)
+        {
+            $safeData[$key] = htmlentities(utf8_decode($value), ENT_QUOTES);
         }
         $searchRequest = new ajaxSearch($safeData);
-        //cpd(get_object_vars($searchRequest));
-        //cpd(get_class_vars(get_class($searchRequest)));
     }
     call_user_func_array('searchData', array($data));
 
