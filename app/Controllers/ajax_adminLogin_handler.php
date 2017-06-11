@@ -8,6 +8,6 @@
 
     function getData($data)
     {
-
+        
     }
     call_user_func_array('getData', array($data));
