@@ -13,12 +13,12 @@
             {
                 if (count($this -> data) == 1)
                 {
-                    call_user_func_array(array($this, 'search'), $this ->data);
+                    return call_user_func_array(array($this, 'search'), $this -> data);
                 }
+
                 if (count($this -> data) > 1)
                 {
-                    cpd($this -> data);
-                    call_user_func_array(array($this, 'adminLogin'), array($this -> data));
+                    return call_user_func_array(array($this, 'division'), array($this -> data));
                 }
             }
             return '<h3>The input arguments is wrong!</h3><br>';
@@ -30,8 +30,10 @@
             return $search;
         }
 
-        private function adminLogin($value)
+        private function division($value)
         {
-            cpd($value);
+            $value = current($value);
+            $search = Model::run() -> findByGenre($value);
+            return $search;
         }
     }
