@@ -1,7 +1,11 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: SINA
-     * Date: 6/9/2017
-     * Time: 5:49 PM
-     */
+    function createData($userInput)
+    {
+        $data = [];
+        foreach ($userInput as $key => $value)
+        {
+            $data[$key] = $value;
+        }
+        $data = array_slice($data, 0, count($data) - 1);
+        return $data;
+    }

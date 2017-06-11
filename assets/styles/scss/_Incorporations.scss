@@ -127,6 +127,68 @@ $text-color: #fff;
         clear: both;
     }
 }
+.imgEffect
+{
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    max-width: 250px;
+    max-height: 370px;
+    -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    @include timer2(0.6s);
+    > img
+    {
+        @include timer2(0.6s);
+        &:hover
+        {
+            @include scale(1.2);
+        }
+    }
+}
+.WrapPrev
+{
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    max-width: 250px;
+    max-height: 370px;
+    -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+    @include timer2(0.6s);
+    visibility: hidden;
+    opacity: 0;
+    #prevIMG
+    {
+        @include timer2(0.6s);
+        &:hover
+        {
+            @include scale(1.2);
+        }
+    }
+}
+.alert
+{
+    cursor: default;
+    > h3
+    {
+        text-align: center !important;
+        margin-bottom: 5px;
+    }
+    #details
+    {
+        display: block !important;
+        text-align: center !important;
+    }
+}
 *
 {
     @include borderRadius();

@@ -5,25 +5,27 @@
 }
 div.wrapAll
 {
-    padding: 2.5em 0 3em 0;
-    background-color: #F9F9F9;
+    padding: 2.5em 0 2em 0;
     height: 100%;
     div.loginContent
     {
-        //background-color: #FAFAFA;
         background-color: #fff;
         margin: 0 auto;
         width: 50%;
-        height: 23em;
+        height: 20em;
         padding: 1em 0.5em 1em 0.5em;
         border: 1px solid #BDBDBD;
+        -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -ms-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         div.wrapper1
         {
             div.input-group
             {
                 input.form-control
                 {
-                    font-family: "Exo-Regular";
                     font-weight: bold;
                     &:focus
                     {
@@ -34,7 +36,6 @@ div.wrapAll
                 }
                 > span
                 {
-                    font-family: "apple-system";
                     font-weight: bold;
                 }
             }
@@ -59,8 +60,27 @@ div.wrapAll
 
         div.wrapper3
         {
-            border: 1px solid #EEEEEE;
-            margin-top: 1.5em;
+            margin-top: 3em;
+            div.alert
+            {
+                > h5
+                {
+                    font-weight: bold;
+                    text-align: center;
+                }
+                > h3
+                {
+                    text-align: center;
+                }
+                span
+                {
+                    display: block;
+                    padding-top: 7px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
         }
         div.input-group
         {
@@ -71,5 +91,4 @@ div.wrapAll
             }
         }
     }
-
 }

@@ -1,7 +1,9 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: SINA
-     * Date: 6/11/2017
-     * Time: 2:13 AM
-     */
+    /*session_destroy($_SESSION['']);
+    session_unset();
+    $_SESSION = array();
+    unset($_SESSION);*/
+
+    unset($_SESSION['logged']);
+    header('Location: '.baseURL.'/admin/login');
+    exit();

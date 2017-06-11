@@ -1,0 +1,29 @@
+footer div.footerContent {
+  text-align: center;
+  border-top: 5px solid #004D40;
+  background-color: #00695C;
+  padding: 1em 0 0.6em 0;
+  margin-top: 2em;
+  cursor: default;
+}
+
+footer div.footerContent ul li:not(:first-child) {
+  display: inline-block;
+}
+
+footer div.footerContent ul li:not(:last-child) {
+  padding-right: 1em;
+}
+
+footer div.footerContent ul li > h5 {
+  display: block;
+  color: #E0E0E0;
+  margin-bottom: 10px;
+}
+
+footer div.footerContent ul li > span {
+  display: block;
+  color: #E0E0E0;
+  margin-bottom: 10px;
+  font-size: 12px;
+}

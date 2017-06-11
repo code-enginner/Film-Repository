@@ -45,6 +45,29 @@
         }
         return NULL;
     }
+    function wrapVar($data, $wrapSing = '`')
+    {
+        if (is_array($data))
+        {
+            foreach ($data as $key => $value)
+            {
+                $data[$key] = $wrapSing.$key.$wrapSing;
+            }
+        }
+        return $data;
+    }
+
+    function createVar($data, $wrapSign = ':')
+    {
+        if (is_array($data))
+        {
+            foreach ($data as $key => $value)
+            {
+                $data[$key] = $wrapSign.$key;
+            }
+        }
+        return $data;
+    }
 
     /********* Dump Data *********/
     function cp($data = NULL)

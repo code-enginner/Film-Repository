@@ -4,7 +4,7 @@
          'public/home' =>
          [
              'title' => 'home',
-             'file' => 'index.php'
+             'file' => 'pages/home.php'
          ],
          'search/division' =>
          [
@@ -19,6 +19,11 @@
          'admin/film/insert' =>
          [
              'title' => 'insert',
-             'file' => 'pages/filmInsert.php'
+             'file' => 'pages/adminPanel.php'
+         ],
+         'admin/logout' =>
+         [
+             'title' => '',
+             'file' => 'pages/logout.php'
          ]
      ];

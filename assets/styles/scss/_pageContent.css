@@ -49,6 +49,92 @@
   clear: both;
 }
 
+.imgEffect {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #DDDDDD;
+  max-width: 250px;
+  max-height: 370px;
+  -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -ms-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.6s all;
+  -moz-transition: 0.6s all;
+  -ms-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.imgEffect > img {
+  -webkit-transition: 0.6s all;
+  -moz-transition: 0.6s all;
+  -ms-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.imgEffect > img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.WrapPrev {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #DDDDDD;
+  max-width: 250px;
+  max-height: 370px;
+  -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -ms-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.6s all;
+  -moz-transition: 0.6s all;
+  -ms-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.WrapPrev #prevIMG {
+  -webkit-transition: 0.6s all;
+  -moz-transition: 0.6s all;
+  -ms-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.WrapPrev #prevIMG:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.alert {
+  cursor: default;
+}
+
+.alert > h3 {
+  text-align: center !important;
+  margin-bottom: 5px;
+}
+
+.alert #details {
+  display: block !important;
+  text-align: center !important;
+}
+
 * {
   -webkit-border-radius: 0 0 0 0 !important;
   -moz-border-radius: 0 0 0 0 !important;
@@ -169,7 +255,7 @@ div#output > hr {
 
 div#output div.cover {
   text-align: center;
-  overflow: hidden;
+  padding: 10px 0 10px 0;
 }
 
 div#output div.cover > img {
@@ -200,6 +286,10 @@ div#output div.details > ul > li > p {
   cursor: default;
   color: #455A64;
   padding-left: 5px;
+}
+
+div#output > div.alert {
+  text-align: center;
 }
 
 @media only screen and (max-width: 991px) {
